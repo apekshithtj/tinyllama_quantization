@@ -19,9 +19,7 @@ env/
 # Jupyter
 .ipynb_checkpoints/
 
-# Local results that are too large to commit
-results/figures/*.png
-results/csv/*.csv
+
 
 # Keep the placeholder file though
 !results/.gitkeep
