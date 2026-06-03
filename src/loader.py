@@ -48,13 +48,13 @@ def load_int4_model(model_id=MODEL_ID, quant_type="nf4"):
 
 def load_wikitext_test_text():
     """WikiText-2 test split, concatenated. Standard ppl benchmark."""
-    ds = load_dataset("wikitext", "wikitext-2-raw-v1", split="test")
+    ds = load_dataset("Salesforce/wikitext", "wikitext-2-raw-v1", split="test")
     return "\n\n".join(ds["text"])
 
 
 def load_wikitext_calibration_texts(n=128, min_length=200):
     # Train split, separate from the test set we use for ppl.
     # Filter out the section-header one-liners that WikiText is full of.
-    ds = load_dataset("wikitext", "wikitext-2-raw-v1", split="train")
+    ds = load_dataset("Salesforce/wikitext", "wikitext-2-raw-v1", split="train")
     long_enough = [t for t in ds["text"] if len(t) > min_length]
     return long_enough[:n]
