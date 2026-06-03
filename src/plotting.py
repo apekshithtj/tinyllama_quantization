@@ -48,6 +48,9 @@ def plot_layer_sensitivity(results, baseline_ppl, filename="layer_sensitivity.pn
 
     fig, ax = plt.subplots(figsize=(10, 4.5))
     ax.bar(names, ppls)
+    margin = max(ppls) - min(min(ppls), baseline_ppl)
+    ax.set_ylim(min(min(ppls), baseline_ppl) - margin * 0.3,
+                max(ppls) + margin * 0.3)
     ax.axhline(baseline_ppl, linestyle="--", color="black",
                label=f"FP16 baseline = {baseline_ppl:.2f}")
     ax.set_xlabel("Decoder layer index")
@@ -68,6 +71,9 @@ def plot_block_sensitivity(results, baseline_ppl, filename="block_sensitivity.pn
     fig, ax = plt.subplots(figsize=(11, 4.5))
     ax.bar(idx - w / 2, attn_ppls, w, label="Attention INT4")
     ax.bar(idx + w / 2, mlp_ppls, w, label="MLP INT4")
+    all_vals = attn_ppls + mlp_ppls + [baseline_ppl]
+    margin = max(all_vals) - min(all_vals)
+    ax.set_ylim(min(all_vals) - margin * 0.3, max(all_vals) + margin * 0.3)
     ax.axhline(baseline_ppl, linestyle="--", color="black",
                label=f"FP16 baseline = {baseline_ppl:.2f}")
     ax.set_xticks(idx)
