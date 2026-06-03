@@ -1,0 +1,27 @@
+{
+  "baseline_ppl": 7.395357131958008,
+  "per_layer_ppl": {
+    "model.layers.0": 7.406518936157227,
+    "model.layers.1": 7.406879425048828,
+    "model.layers.2": 7.424781322479248,
+    "model.layers.3": 7.397097110748291,
+    "model.layers.4": 7.403323650360107,
+    "model.layers.5": 7.405525207519531,
+    "model.layers.6": 7.403346538543701,
+    "model.layers.7": 7.422239303588867,
+    "model.layers.8": 7.411050319671631,
+    "model.layers.9": 7.409675598144531,
+    "model.layers.10": 7.398801326751709,
+    "model.layers.11": 7.398035526275635,
+    "model.layers.12": 7.408353805541992,
+    "model.layers.13": 7.397157669067383,
+    "model.layers.14": 7.4106364250183105,
+    "model.layers.15": 7.409195423126221,
+    "model.layers.16": 7.427931308746338,
+    "model.layers.17": 7.398709774017334,
+    "model.layers.18": 7.413949966430664,
+    "model.layers.19": 7.412154674530029,
+    "model.layers.20": 7.408539772033691,
+    "model.layers.21": 7.433598518371582
+  }
+}

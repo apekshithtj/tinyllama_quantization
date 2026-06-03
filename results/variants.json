@@ -1,0 +1,20 @@
+[
+  {
+    "label": "FP16",
+    "perplexity": 8.308600425720215,
+    "tokens_per_sec": 35.31146657472516,
+    "peak_memory_gb": 3.507319927215576
+  },
+  {
+    "label": "INT8 (bnb)",
+    "perplexity": 8.345681190490723,
+    "tokens_per_sec": 9.022051448040411,
+    "peak_memory_gb": 2.611757278442383
+  },
+  {
+    "label": "INT4 (bnb nf4)",
+    "perplexity": 8.684243202209473,
+    "tokens_per_sec": 158.12765766938602,
+    "peak_memory_gb": 2.175774097442627
+  }
+]
