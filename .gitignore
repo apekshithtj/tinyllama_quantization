@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local results that are too large to commit
+results/figures/*.png
+results/csv/*.csv
+
+# Keep the placeholder file though
+!results/.gitkeep
+
+# HuggingFace cache that sometimes lands here
+.cache/
+hf_cache/
